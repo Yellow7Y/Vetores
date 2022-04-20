@@ -1,0 +1,31 @@
+import java.util.Scanner;
+/*
+Crie um sistema onde o usuário vai cadastrar, utilizando o console, as 5 tarefas mais importantes do dia dele.
+Armazene cada uma dessas tarefas em um vetor e, no final, imprima as tarefas novamente.
+ */
+public class Vetor_exercicio_01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Por favor, informe quais são as 5 tarefas mais importnates do seu dia");
+        System.out.print("Qual a sua primeira tarefa:");
+        String primeiraTarefa = scanner.nextLine();
+        System.out.print("Agora, qual a sua segunda tarefa:");
+        String segundaTarefa = scanner.nextLine();
+        System.out.print("E qual a sua terceira tarefa:");
+        String terceiraTarefa = scanner.nextLine();
+        System.out.print("Qual a sua quarta tarefa:");
+        String quartaTarefa = scanner.nextLine();
+        System.out.print("Qual a sua quinta tarefa:");
+        String quintaTarefa = scanner.nextLine();
+        System.out.println("Suas 5 principais tarefas de hoje são:");
+        String [] tarefas = new String[5];
+        tarefas[0] = primeiraTarefa;
+        tarefas[1] = segundaTarefa;
+        tarefas[2] = terceiraTarefa;
+        tarefas[3] = quartaTarefa;
+        tarefas[4] = quintaTarefa;
+        for (int i = 0; i < tarefas.length; i++) {
+            System.out.println(tarefas[i]);
+        }
+    }
+}
